@@ -1,24 +1,35 @@
-# README
+# pNotes (A simple notes app)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+The app simply does what the title suggests. Its a simple notes app where you can create, store and access notes via tags.
 
-Things you may want to cover:
+## Tech stack for the app:
 
-* Ruby version
+* Rails 5.2
 
-* System dependencies
+* Postgesql 9.6.1
 
-* Configuration
+* Puma as the app server
 
-* Database creation
+* Bootstrap and JQuery for frontend 
 
-* Database initialization
+## Basic features:
 
-* How to run the test suite
+* Simple CRUD based notes app.
 
-* Services (job queues, cache servers, search engines, etc.)
+* Can access notes via tags
 
-* Deployment instructions
+## Possible Enhancements (Can be done with more time in hand):
 
-* ...
+* More reactive UI can be built using React or Angular
+
+* Search functionality for the notes. Both via tags as well as full text search capabilty.
+
+* Can delete old notes.
+
+* Can share notes via social nedia.
+
+* REST API for clients to consume.
+
+* More robust feature testing of the product.
+
+* More robust unit testing of the product.
