@@ -1,0 +1,14 @@
+@import 'bootstrap';
+
+.pnotes-form-centering {
+     position: absolute;
+     top: 50%;
+     left:50%;
+     transform: translate(-50%,-50%);
+   }
+.pnotes-container{
+		min-width:980px;
+}
+.pnotes-span12{
+	margin: 0 auto;
+}

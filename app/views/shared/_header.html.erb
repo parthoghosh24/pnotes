@@ -1,0 +1,24 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-between">
+  <%= link_to root_path do%>
+      <h3>pNotes</h3>
+    <%end%>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <div class="form-inline ml-auto">
+      <div class="row">
+        <div class="col-sm-6">
+          <a class="btn btn-primary btn-outline-success my-2 my-sm-0" href="#">
+            <i class="fa fa-plus-square-o" aria-hidden="true"></i> Create
+          </a>    
+        </div>
+        <div class="col-sm-6">
+          <%=link_to logout_path,{:class => "btn bnt-alert btn-outline-success my-2 my-sm-0"} do%>
+            <i class="fa fa-sign-out" aria-hidden="true"></i> Logout
+          <%end%>
+        </div>
+      </div>    
+    </div>
+  </div>
+</nav>
