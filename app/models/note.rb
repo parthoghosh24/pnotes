@@ -17,19 +17,8 @@ class Note < ApplicationRecord
 	has_many :tags_mappers
 	has_many :tags, through: :tags_mappers
 
-	after_create :persist_tags
-
 	def add_tags(current_user,tag_tokens)
 		Tag.create_tags(self.id,current_user,tag_tokens)
 	end
 
-	# def update_tags(current_user,tag_tokens)
-		
-	# end
-
-	private
-
-	def persist_tags
-
-	end
 end

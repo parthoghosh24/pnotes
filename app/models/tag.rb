@@ -17,13 +17,12 @@ class Tag < ApplicationRecord
   	if tags.size > 0
   		tags.each do |tag|
   			tag_obj = Tag.find_or_create_by(name:tag,unique_id:tag.parameterize)
-  			puts "tag #{tag_obj.inspect}"
   			TagsMapper.find_or_create_by({tag_id:tag_obj.id,note_id:note_id,user_id:current_user.id})	
   		end
   	end
   end
 
   def notes_by_user(user)
-  	 Note.where(id:TagsMapper.tags_by_user(self.id,user.id).pluck(:note_id))
+  	 Note.where(id:TagsMapper.tags_by_tag_and_user(self.id,user.id).pluck(:note_id))
   end
 end

@@ -15,5 +15,5 @@ class TagsMapper < ApplicationRecord
   belongs_to :note
   belongs_to :user
 
-  scope :tags_by_user, ->(tag_id,user_id){where(tag_id: tag_id, user_id: user_id)}
+  scope :tags_by_tag_and_user, ->(tag_id,user_id){where(tag_id: tag_id, user_id: user_id)}
 end
