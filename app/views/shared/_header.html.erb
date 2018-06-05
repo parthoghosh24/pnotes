@@ -9,9 +9,9 @@
     <div class="form-inline ml-auto">
       <div class="row">
         <div class="col-sm-6">
-          <a class="btn btn-primary btn-outline-success my-2 my-sm-0" href="#">
+          <%=link_to new_note_path,{:class => "btn btn-primary btn-outline-success my-2 my-sm-0"} do%>
             <i class="fa fa-plus-square-o" aria-hidden="true"></i> Create
-          </a>    
+          <%end%>
         </div>
         <div class="col-sm-6">
           <%=link_to logout_path,{:class => "btn bnt-alert btn-outline-success my-2 my-sm-0"} do%>

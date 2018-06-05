@@ -1,0 +1,26 @@
+
+	<ul class="list-group">
+		<%notes.each do |note|%>
+			<li class="list-group-item">
+				<div class="row">
+					<b>
+						<%=note.title%> 
+						<%=link_to edit_note_path(note.id) do%>
+            				<i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+          				<%end%>
+						
+					</b>
+				</div>
+				<br>
+				<div class="row col-sm-6">
+					<%=note.body%>
+				</div>
+				<br>
+				<div class="row">
+					<div class="col-sm-6"><small><%=note.created_at.to_formatted_s(:long_ordinal)%></small></div>
+					<div class="col-sm-6"><small><%=note.tags.pluck(:name).join(",")%></small></div>
+				</div>
+			</li>
+		<%end%>		
+	</ul>	
+

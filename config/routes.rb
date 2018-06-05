@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  get 'tags/:tag', to: 'tags#show', as: :tag_notes
   root to: "notes#index"
   resources :notes, except: [:index]
   devise_for :users

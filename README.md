@@ -20,6 +20,8 @@ The app simply does what the title suggests. Its a simple notes app where you ca
 
 ## Possible Enhancements (Can be done with more time in hand):
 
+* Make tags editable for a note
+
 * More reactive UI can be built using React or Angular
 
 * Search functionality for the notes. Both via tags as well as full text search capabilty.
